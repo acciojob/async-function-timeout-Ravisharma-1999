@@ -1,8 +1,8 @@
 //your JS code here. If required.
 document.getElementById('btn').addEventListener('click',async function (){
 	const textInput = document.getElementById('text').value;
-		const textInput = document.getElementById('delay').value;
-	const textInput = document.getElementById('output');
+		const delayInput = document.getElementById('delay').value;
+	const outputDiv = document.getElementById('output');
 	const delay = parseInt(delayinput, 10);
 	outputDiv.textContent = "";
 	const waitForDelay = (ms) => {
@@ -12,6 +12,8 @@ document.getElementById('btn').addEventListener('click',async function (){
 };
 if(textInput && delay){
 	await waitForDelay(delay);
-	outputDiv.textContent = "Please enter valid text and delay.";
+	outputDiv.textContent = textInput;
+} else {
+		outputDiv.textContent = "Please enter valid text and delay.";
 }
 ;
