@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.getElementById('btn').addEventListener('click', async function (){
+document.getElementById('btn').addEventListener('click', async function () {
 	const textInput = document.getElementById('text').value;
     const delayInput = document.getElementById('delay').value;
 	const outputDiv = document.getElementById('output');
